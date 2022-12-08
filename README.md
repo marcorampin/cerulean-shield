@@ -1,2 +1,2 @@
-# haiku
+# Haiku
 Aesthetic haiku poems

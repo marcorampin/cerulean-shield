@@ -1,3 +1,5 @@
+/*elements*/
+
 html
 {
     -ms-overflow-style: none;  /* IE and Edge */
@@ -51,6 +53,8 @@ a:active
     border-radius: 3px;
 }
 
+/*classes*/
+
 .haiku
 {
     height: 100vh;
@@ -83,6 +87,8 @@ a:active
     color: rgb(255, 255, 255, 1);
     background: rgb(0, 0, 0, 0.1);
 }
+
+/*id*/
 
 #introduction
 {
@@ -128,6 +134,7 @@ a:active
     writing-mode: vertical-lr;
     text-align: center;
     font-size: max(70px, 20vh);
+    letter-spacing: max(10px, 3vh);
 
     padding: 30px 12% 0px 0px;
     margin: 0px;

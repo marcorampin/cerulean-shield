@@ -14,9 +14,10 @@ $(document).ready(function() {
   //setting the intro left and right random pics
   const setPics = () => {
       const pics = randomPic();
-      const left = "../images/haiku/sky.jpg";
-      $(leftPic).css("background-image", "url ("+left+")");
-      $(rightPic).css("background", "black");
+      const left = "https://chiswick.blob.core.windows.net/blogs/Chiswick-Auctions-London-Kawase-Hasui-woodblock-print.jpg";
+	  const right = "sky.jpg";
+      $(leftPic).attr("src", left);
+      //$(rightPic).attr("src",right) 
 }
 
 

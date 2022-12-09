@@ -16,8 +16,8 @@ $(document).ready(function() {
 		const pics = randomPic();
       		const left = pics[0];
 		const right = pics[1];
-		const leftUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+str(left)+".jpg";
-		const rightUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+str(right)+".jpg";
+		const leftUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(left)+".jpg";
+		const rightUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(right)+".jpg";
       		$(leftPic).attr("src", leftUrl);
       		$(rightPic).attr("src", rightUrl); 
 	}

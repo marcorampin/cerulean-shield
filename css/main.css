@@ -139,7 +139,7 @@ a:active
 {
     writing-mode: vertical-lr;
     text-align: center;
-    font-size: max(50px, 10vw);
+    font-size: max(70px, 10vw);
     letter-spacing: max(10px, 1vw);
 
     padding: 30px 13% 0px 0px;
@@ -148,7 +148,7 @@ a:active
 
 #intro-eng
 {
-    font-size: max(20px, 3vw);
+    font-size: max(30px, 3vw);
 }
 
 #intro-right

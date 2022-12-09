@@ -17,7 +17,7 @@ $(document).ready(function() {
       const left = "https://chiswick.blob.core.windows.net/blogs/Chiswick-Auctions-London-Kawase-Hasui-woodblock-print.jpg";
 	const right = "https://raw.githubusercontent.com/marcorampin/haiku/main/javascript/sky.jpg";
       $(leftPic).attr("src", left);
-      $(rightPic).attr("src",encodeURIComponent(right)); 
+      $(rightPic).attr("src", right); 
 }
 
 

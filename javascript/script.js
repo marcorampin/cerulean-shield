@@ -1,6 +1,5 @@
 $(document).ready(function() {
   	const introLeft = document.querySelector('#intro-left');
-	const introCenter = document.querySelector('#intro-center');
   	const introRight = document.querySelector('#intro-right');
 
 	const numberPics = 8;
@@ -25,16 +24,6 @@ $(document).ready(function() {
 		const rightUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(pics[1])+".jpg";
 		$(introLeft).attr("src", leftUrl);
 		$(introRight).attr("src", rightUrl);
-	}
-
-	//setting the intro part horizontal in case the screen height is bigger than the width
-	const introDirection = () => {
-		const width = screen.width;
-		const height = screen.height;
-
-		if (height > width) {
-			//$
-		}
 	}
 
 	const loadFunctions = () => {

@@ -105,12 +105,7 @@ a:active
 #intro-left
 {
     width: 100%;
-    height: 100%;
-
-    /*
-    background-size: cover;
-    background-repeat: no-repeat;
-    */
+    height: 100vh;
 
     object-fit: cover;
 
@@ -155,9 +150,12 @@ a:active
 #intro-right
 {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
     object-fit: cover;
+    /*background-size: cover;
+    background-repeat: no-repeat;
+    */
 
     grid-column: 3;
     justify-self: end;

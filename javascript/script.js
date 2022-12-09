@@ -8,20 +8,24 @@ $(document).ready(function() {
       		for (let i=0; i<2; i++){
         		array.push(parseInt(Math.random()*7));
     		}
+		console.log(array);
+		while (array[0] == array[1]){
+			array[1] = parseInt(Math.random()*7);
+			console.log(array[1]);
+		}
     		return array;
   	}
 
 	//setting the intro left and right random pics
 	const setPics = () => {
 		const pics = randomPic();
-      		const left = pics[0];
-		const right = pics[1];
-		const leftUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(left)+".jpg";
-		const rightUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(right)+".jpg";
+		const leftUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(pics[0])+".jpg";
+		const rightUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(pics[1])+".jpg";
       		$(leftPic).attr("src", leftUrl);
       		$(rightPic).attr("src", rightUrl); 
+		console.log(rightUrl);
 	}
 
 
-  	window.addEventListener('load', setPics);
+  	window.addEventListener('load', setPics());
 });

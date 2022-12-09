@@ -15,9 +15,9 @@ $(document).ready(function() {
   const setPics = () => {
       const pics = randomPic();
       const left = "https://chiswick.blob.core.windows.net/blogs/Chiswick-Auctions-London-Kawase-Hasui-woodblock-print.jpg";
-	  const right = "sky.jpg";
+	const right = "sky.jpg";
       $(leftPic).attr("src", left);
-      //$(rightPic).attr("src",right) 
+      $(rightPic).attr("src",right) 
 }
 
 

@@ -3,15 +3,17 @@ $(document).ready(function() {
 	const introCenter = document.querySelector('#intro-center');
   	const introRight = document.querySelector('#intro-right');
 
-  	//creating an array with two random values (between 0 and 7)
+	const numberPics = 8;
+
+  	//creating an array with two random values (between 0 and 8)
   	const randomPic = () => {
       		const array = [];
       		for (let i=0; i<2; i++){
-        		array.push(parseInt(Math.random()*7));
+        		array.push(parseInt(Math.random()*numberPics));
     		}
 		console.log(array);
 		while (array[0] == array[1]){
-			array[1] = parseInt(Math.random()*7);
+			array[1] = parseInt(Math.random()*numberPics);
 		}
     		return array;
   	}

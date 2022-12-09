@@ -107,6 +107,9 @@ a:active
     width: 100%;
     height: 100%;
 
+    background-size: cover;
+    background-repeat: no-repeat;
+
     grid-column: 1;
     justify-self: start;
 }
@@ -150,11 +153,14 @@ a:active
     width: 100%;
     height: 100%;
 
+    background-size: cover;
+    background-repeat: no-repeat;
+
     grid-column: 3;
     justify-self: end;
 }
 
 #haiku-1
 {
-    background-image: url('../images/sky.jpg');
+    background-image: url('../images/haiku/sky.jpg');
 }

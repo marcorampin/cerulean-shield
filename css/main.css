@@ -16,19 +16,10 @@ body
     margin: 0px;
 }
 
-footer
-{
-    margin: 25px;
-
-    font-size: 13px;
-    color: black;
-    text-align: center;
-}
-
 a
 {
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     color:black;
 
@@ -67,25 +58,27 @@ a:active
 
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    text-align: right;
+    justify-content: center;
+    text-align: center;
 }
 
 .text
 {
     height: max-content;
     width: max-content;
-    padding-left: 20px;
-    padding-right: 20px;
+
+    padding-left: 3%;
+    padding-right: 3%;
 
     font-size: max(30px, 4vw);
 
     color: rgb(255, 255, 255, 0);
     background: rgb(0, 0, 0, 0);
-    border-radius: 20px;
+    border-radius: 7px;
 }
 
-.text:hover{
+.text:hover
+{
     color: rgb(255, 255, 255, 1) !important;
     background: rgb(0, 0, 0, 0.3) !important;
 }
@@ -124,9 +117,10 @@ a:active
 
     color: black;
     background: white;
+    border-radius: 7px;
 
     margin: 0px;
-    padding: 3%;
+    padding: 2% 5% 1% 5%;
 }
 
 #intro-jap
@@ -143,6 +137,15 @@ a:active
 #intro-eng
 {
     font-size: max(25px, 3vw);
+    margin: 10px;
+}
+
+#creator
+{
+    background: white;
+
+    color: black;
+    text-align: center;
 }
 
 #intro-right

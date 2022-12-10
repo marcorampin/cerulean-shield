@@ -43,13 +43,14 @@ $(document).ready(function() {
 
 					$('.text').css('background','rgb(0, 0, 0, '+(alpha / 2.5)+')');
 					$('.text').css('color','rgb(255, 255, 255, '+(alpha * 3)+')');
+					$('.text').css('outline','2px solid rgb(0, 0, 0, '+(alpha)+')');
 				});
 			});
 		}
 		else {	//if not it keeps the text always visible
 			$('#introduction').css('height', window.innerHeight+'px');
 			$('.haiku').css('height', window.innerHeight+'px');
-			$(a).css('box-shadow', '0px 2px 0px skyblue');
+			$('#creator').css('box-shadow', '0px 2px 0px skyblue');
 			$('.text').css('background','rgb(0, 0, 0, 0.3)');
 			$('.text').css('color','rgb(255, 255, 255, 1)');
 		}

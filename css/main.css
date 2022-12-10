@@ -46,6 +46,7 @@ a:active
     height: 100vh;
 
     object-fit: cover;
+    outline: 2px solid black;
 }
 
 .haiku
@@ -60,6 +61,7 @@ a:active
     align-items: center;
     justify-content: center;
     text-align: center;
+    outline: 2px solid black;
 }
 
 .text
@@ -83,6 +85,7 @@ a:active
 {
     color: rgb(255, 255, 255, 1) !important;
     background: rgb(0, 0, 0, 0.3) !important;
+    outline: 2px solid black !important;
 }
 
 /*id*/

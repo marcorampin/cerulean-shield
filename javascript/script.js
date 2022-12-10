@@ -19,8 +19,8 @@ $(document).ready(function() {
 	//setting the intro left and right random pics
 	const setPics = () => {
 		const pics = randomPic();
-		const leftUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(pics[0])+".jpg";
-		const rightUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(pics[1])+".jpg";
+		const leftUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(pics[0])+".webp";
+		const rightUrl = "https://raw.githubusercontent.com/marcorampin/haiku/main/images/intro/"+String(pics[1])+".webp";
 		$(introLeft).attr("src", leftUrl);
 		$(introRight).attr("src", rightUrl);
 	}

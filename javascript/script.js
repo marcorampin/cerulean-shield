@@ -39,11 +39,11 @@ $(document).ready(function() {
 		$win.mousemove(function(e) {
 			getWidth();
 			//alpha = (e.clientX/w * 0.5) + (0.5 - Math.abs((e.clientY/h) - 0.5));
-			alpha = ((e.clientX/w)-0.2);
+			alpha = ((e.clientX/w) - 0.2 *0.5) * (0.5 - Math.abs((e.clientY/h) - 0.5))*2.5;
 
 			$('.text').css('background','rgb(0, 0, 0, '+(alpha/3)+')');
 			$('.text').css('color','rgb(255, 255, 255, '+alpha+')');
-			$('.text').text(((e.clientX/w)-0.2));
+			//$('.text').text((e.clientX/w) - 0.2 * 0.5) * (0.5 - Math.abs((e.clientY/h) - 0.5));
 		});
 	});
 

@@ -78,7 +78,7 @@ a:active
     padding-left: 20px;
     padding-right: 20px;
 
-    font-size: 40px;
+    font-size: max(30px, 4vw);
 
     color: rgb(255, 255, 255, 0);
     background: rgb(0, 0, 0, 0);
@@ -86,8 +86,8 @@ a:active
 }
 
 .text:hover{
-    color: rgb(255, 255, 255, 1);
-    background: rgb(0, 0, 0, 0.1);
+    color: rgb(255, 255, 255, 1) !important;
+    background: rgb(0, 0, 0, 0.3) !important;
 }
 
 /*id*/

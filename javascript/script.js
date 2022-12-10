@@ -25,28 +25,37 @@ $(document).ready(function() {
 		$(introRight).attr("src", rightUrl);
 	}
 
-
 	//transparency effect on text of each haiku
-	$(function(){
-		var $win = $(window),
-		w = 0,h = 0,
-		alpha = 1,
-		getWidth = function() {
-			w = $win.width();
-			h = $win.height();
-		};
+	const transparencyText = () => {
+		if(window.matchMedia("(pointer: fine)").matches) {	//it checks if the device has a mouse (not a smarphone), if so it changes continuosly the transparency of the text based on mouse position;
+			$(function(){
+				let $win = $(window),
+				w = 0,h = 0,
+				alpha = 1,
+				getWidth = function() {
+					w = $win.width();
+					h = $win.height();
+				};
 
-		$win.mousemove(function(e) {
-			getWidth();
-			alpha = ((1 - Math.abs((e.clientX * 2 / w) - 1)) * (1 - Math.abs((e.clientY * 2 / h) - 1))) - 0.1;
+				$win.mousemove(function(e) {
+					getWidth();
+					alpha = ((1 - Math.abs((e.clientX * 2 / w) - 1)) * (1 - Math.abs((e.clientY * 2 / h) - 1))) - 0.1;
 
-			$('.text').css('background','rgb(0, 0, 0, '+(alpha / 2.5)+')');
-			$('.text').css('color','rgb(255, 255, 255, '+(alpha * 3)+')');
-		});
-	});
+					$('.text').css('background','rgb(0, 0, 0, '+(alpha / 2.5)+')');
+					$('.text').css('color','rgb(255, 255, 255, '+(alpha * 3)+')');
+				});
+			});
+		}
+		else {	//if not it keeps the text always visible
+			$('.text').css('background','rgb(0, 0, 0, 0.3)');
+			$('.text').css('color','rgb(255, 255, 255, 1)');
+		}
+	}
+
 
 	const loadFunctions = () => {
 		setPics();
+		transparencyText();
 	}
 
   	window.addEventListener('load', loadFunctions());

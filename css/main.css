@@ -66,6 +66,8 @@ a:active
 {
     height: max-content;
     width: max-content;
+    max-height: 80vh;
+    overflow: hidden;
 
     padding-left: 3%;
     padding-right: 3%;
@@ -105,6 +107,8 @@ a:active
 {
     width: max-content;
     height: max-content;
+    max-height: 80vh;
+    overflow: hidden;
     position: absolute;
 
     justify-self: center;
@@ -130,19 +134,20 @@ a:active
     font-size: max(80px, 10vw);
     letter-spacing: max(10px, 1vw);
 
-    padding: 30px 13% 0px 0px;
+    padding: 10% 13% 0px 0px;
     margin: 0px;
 }
 
 #intro-eng
 {
     font-size: max(25px, 3vw);
-    margin: 10px;
+    margin: 5%;
 }
 
 #creator
 {
     background: white;
+    margin: 0px;
 
     color: black;
     text-align: center;

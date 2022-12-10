@@ -47,6 +47,8 @@ $(document).ready(function() {
 			});
 		}
 		else {	//if not it keeps the text always visible
+			$('#introduction').css('height', window.innerHeight+'px');
+			$('.haiku').css('height', window.innerHeight+'px');
 			$('.text').css('background','rgb(0, 0, 0, 0.3)');
 			$('.text').css('color','rgb(255, 255, 255, 1)');
 		}

@@ -51,7 +51,6 @@ a:active
 
 .haiku
 {
-    height: 100vh;
     width: 100%;
 
     background-size: cover;
@@ -66,15 +65,15 @@ a:active
 
 .text
 {
-    height: max-content;
-    width: max-content;
-    max-height: 80vh;
+    height: min(max-content, 80vh);
+    width: min(max-content, 80vw);
+
     overflow: hidden;
 
     padding-left: 3%;
     padding-right: 3%;
 
-    font-size: max(30px, 4vw);
+    font-size: min(8vh, 6vw);
 
     color: rgb(255, 255, 255, 0);
     background: rgb(0, 0, 0, 0);
@@ -92,7 +91,6 @@ a:active
 
 #introduction
 {
-    height: 100vh;
     width: 100%;
 
     background: white;
@@ -110,7 +108,7 @@ a:active
 {
     width: max-content;
     height: max-content;
-    max-height: 80vh;
+    max-height: 80%;
     overflow: hidden;
     position: absolute;
 
@@ -135,16 +133,16 @@ a:active
     writing-mode: vertical-lr;
     text-align: center;
     font-size: max(80px, 10vw);
-    letter-spacing: max(10px, 1vw);
+    letter-spacing: min(10px, 1vw, 1vh);
 
-    padding: 10% 13% 0px 0px;
+    padding: 3vh 15% 0px 0px;
     margin: 0px;
 }
 
 #intro-eng
 {
     font-size: max(25px, 3vw);
-    margin: 5%;
+    margin: 3%;
 }
 
 #creator
@@ -164,4 +162,9 @@ a:active
 #haiku-1
 {
     background-image: url('../images/haiku/sky.webp');
+}
+
+#haiku-2
+{
+    background-image: url('../images/haiku/freedom.webp');
 }

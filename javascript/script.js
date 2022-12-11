@@ -25,6 +25,11 @@ $(document).ready(function() {
 		$(introRight).attr("src", rightUrl);
 	}
 
+	const resizeHeight = () => {
+		$('#introduction').css('height', window.innerHeight+'px');
+		$('.haiku').css('height', window.innerHeight+'px');
+	}
+
 	//transparency effect on text of each haiku
 	const transparencyText = () => {
 		if(window.matchMedia("(pointer: fine)").matches) {	//it checks if the device has a mouse (not a smarphone), if so it changes continuosly the transparency of the text based on mouse position;
@@ -48,8 +53,6 @@ $(document).ready(function() {
 			});
 		}
 		else {	//if not it keeps the text always visible
-			$('#introduction').css('height', window.innerHeight+'px');
-			$('.haiku').css('height', window.innerHeight+'px');
 			$('#creator').css('box-shadow', '0px 2px 0px skyblue');
 			$('.text').css('background','rgb(0, 0, 0, 0.3)');
 			$('.text').css('color','rgb(255, 255, 255, 1)');
@@ -60,7 +63,9 @@ $(document).ready(function() {
 	const loadFunctions = () => {
 		setPics();
 		transparencyText();
+		resizeHeight();
 	}
 
+	window.addEventListener("resize", resizeHeight);
   	window.addEventListener('load', loadFunctions());
 });

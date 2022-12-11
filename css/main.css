@@ -125,7 +125,7 @@ a:active
     border-radius: 7px;
 
     margin: 0px;
-    padding: 2% 5% 1% 5%;
+    padding: 3% 5% 1% 5%;
 }
 
 #intro-jap
@@ -135,7 +135,7 @@ a:active
     font-size: max(80px, 10vw);
     letter-spacing: min(10px, 1vw, 1vh);
 
-    padding: 3vh 15% 0px 0px;
+    padding: 0px 3vw 0px 0px;
     margin: 0px;
 }
 
